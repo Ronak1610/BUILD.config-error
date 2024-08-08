@@ -22,7 +22,7 @@ object NetworkModule {
             val builder=Retrofit.Builder()
                 .baseUrl("https://cat-fact.herokuapp.com")
 
-             if(BuildConfig.DEBUG)
+             if(BuildConfig.DEBUG) // the error is here
              {
                  builder.client(okHttpClient)
 
